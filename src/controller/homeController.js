@@ -1,7 +1,7 @@
-const model = require('../model/homeModel')
+const model = require('../model/homeModel') 
 
-const GET = (req, res) => {
-    res.render('index.html', {data: [1,2,3]})
+const GET = async (req, res) => {
+    res.render('index.html', {data: await model.getUsers()})
 };
 
 module.exports = {

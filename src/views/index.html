@@ -9,7 +9,12 @@
 </head>
 <body>
     <h1>MVC for ExpressJS, EJS & PostgreSQL</h1>
-
+    <br>
+    <ul>
+    <% for(let value of data) { %>
+        <li><%= value.firsname %></li>
+    <% } %>
+    </ul>
     <script src="/js/main.js"></script>
 </body>
 </html>
