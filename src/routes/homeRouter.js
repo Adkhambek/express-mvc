@@ -1,6 +1,6 @@
-const router = require('express').Router();
-const {GET} = require('../controller/homeController');
+const router = require("express").Router();
+const { GET } = require("../controller/homeController");
 
-router.get('/', GET);
+router.route("/").get(GET);
 
-module.exports = router
+module.exports = router;
